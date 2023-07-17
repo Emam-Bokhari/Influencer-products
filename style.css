@@ -1,0 +1,218 @@
+/* Custom CSS Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration:none;
+  list-style: none;
+}
+/* Css root */
+:root{
+    --primary-font-color: #3A3A3A;
+    --primary-font-size:1rem;
+    --primary-font-weight:700;
+    --secondary-font-weight:600;
+}
+/* Start Header Section */
+.header{
+    padding:5rem 7.5rem;
+}
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menus ul{
+    display:flex;
+    gap:2rem;
+}
+.logo-container{
+    color:var(--secondary-font-color);
+    font-size:1.2rem;
+    font-weight:var(--primary-font-weight);
+}
+.logo-container i{
+    color:var(--primary-font-color);
+    font-size: 1.3rem;
+    font-weight:var(--primary-font-weight);
+    display:none;
+}
+.menus ul li a{
+    color:var(--primary-font-color);
+    font-size:var(--primary-font-size);
+    font-weight: var(--secondary-font-weight);
+}
+.menus ul li i{
+    color:var(--primary-font-color);
+    font-size:1.3rem;
+    font-weight:var(--primary-font-weight);
+}
+/* Start Banner Section */
+.banner-info h2{
+    color:var(--primary-font-color);
+    font-weight: var(--primary-font-weight);
+    font-size:3rem;
+    line-height:4rem;
+}
+.banner-info p{
+    color:var(--primary-font-color);
+    font-size:var(--primary-font-size);
+    font-weight: var(--secondary-font-weight);
+    margin:.5rem 0 2rem 0;
+}
+.preebook-btn{
+    padding:.6rem 1.6rem;
+    background:#E02C6D;
+    border-radius:2.5rem;
+    color:#fff;
+    font-size:var(--primary-font-size);
+    font-weight: var(--primary-font-weight);
+}
+.banner-img-container{
+    background-image: url("./images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-img-container img{
+    position:relative;
+    top:.4rem;
+    left:.5rem;
+}
+.banner-container{
+    margin-top:3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+}
+/* Start Inf Card Section */
+main{
+    padding: 0 10rem;
+}
+.inf-card{
+    min-width:100px;
+    min-height:60px;
+    /* border:2px solid red; */
+    padding:.5rem;
+}
+.inf-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+/* Start Inf Card Section */
+main{
+    padding:0 10rem;
+}
+.popular-collection-section{
+    margin-top:3rem;
+}
+.popular-collection-card-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+    justify-items: center;
+    gap:1.5rem;
+    justify-items: center;
+    margin-top:3rem;
+}
+.popular-collection-title{
+    font-size:1.5rem;
+    font-weight: var(--secondary-font-weight);
+    color:var(--primary-font-color);
+    text-align: center;
+}
+.popular-collection-card{
+    max-width:20rem;
+    border-radius:.7rem;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding:1rem;
+}
+.popular-collection-card img{
+    width:100%;
+    overflow:hidden;
+    object-fit: cover;
+}
+.popular-collection-card h3{
+    color: #18191F;
+    font-size:1.5rem;
+    font-weight:500;
+    margin-top:1rem;
+}
+.popular-collection-card .price{
+    color: rgba(0, 0, 0, 0.87);
+    font-size:1.3rem;
+    font-weight: 400;
+    margin-top:1rem;
+}
+.popular-collection-card .icon i{
+    margin-top:1rem;
+color:#FB8200
+}
+.popular-collection-card p{
+    color:  #787885;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    line-height:1.1rem;
+    font-weight:var(--primary-font-weight);
+    margin-top:1rem;
+}
+.popular-collection-section .see-more{
+    color:#E02C6D;
+    text-align: right;
+    padding:2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Small Device & Medium Device */
+@media screen and (max-width:922px){
+    .header{
+        padding:2.12rem 1rem;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap:2rem;
+    }
+    .banner-img-container img{
+        width:100%;
+    }
+    .logo-container i{
+        display:inline;
+    }
+    .menus{
+        display:none;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    main{
+        padding: 0 2rem;
+    }
+    .inf-card img{
+        width:100%;
+    }
+}
+/* Large Device  */
+@media screen and (min-width:923px) and (max-width:1200px){
+    .header{
+        padding:3rem 5rem;
+    }
+    .banner-container{
+        gap:2rem;
+    }
+}
